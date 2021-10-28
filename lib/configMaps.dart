@@ -4,6 +4,6 @@ import 'package:uber/Models/allUsers.dart';
 
 String mapKey = "AIzaSyDXr-tBvlC_BApCsY8NvZy4rFFss4nlxok";
 
-User? firebaseUser;
+late User firebaseUser;
 
-Users? userCurrentInfo;
+late Users userCurrentInfo;

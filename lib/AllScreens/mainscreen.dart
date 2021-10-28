@@ -70,7 +70,7 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
   // initialise the state
   @override
   void initState() {
-    //TODO: implement initState
+ 
     super.initState();
 
     AssistantMethods.getCurrentOnlineUserInfo();
@@ -100,8 +100,8 @@ class _MainScreenState extends State<MainScreen> with TickerProviderStateMixin {
       "pickup": pickUplocMap,
       "dropoff": dropOfflocMap,
       "created_at": DateTime.now().toString(),
-      "rider_name": userCurrentInfo!.name,
-      "rider_phone": userCurrentInfo!.phone,
+      "rider_name": userCurrentInfo.name,
+      "rider_phone": userCurrentInfo.phone,
       "pickup_address": pickUp.placeName,
       "dropoff_address": dropOff.placeName,
     };

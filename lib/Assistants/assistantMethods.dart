@@ -101,8 +101,8 @@ class AssistantMethods {
 
   static void getCurrentOnlineUserInfo() async {
     
-    firebaseUser =  FirebaseAuth.instance.currentUser;
-    String userId = firebaseUser!.uid;
+    firebaseUser =  FirebaseAuth.instance.currentUser!;
+    String userId = firebaseUser.uid;
     DatabaseReference reference =
         FirebaseDatabase.instance.reference().child("users").child(userId);
 
